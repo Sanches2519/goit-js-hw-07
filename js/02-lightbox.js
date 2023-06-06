@@ -1,4 +1,4 @@
-import { galleryItems } from './gallery-items.js';
+import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 const gallery = document.querySelector(".gallery");
 const imagesEl = galleryItems
@@ -12,10 +12,10 @@ const imagesEl = galleryItems
   )
   .join("");
 gallery.insertAdjacentHTML("beforeend", imagesEl);
-new SimpleLightbox('.gallery a', { 
-  captionSelector: 'alt',
+new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
   captionDelay: 250,
-  captionPosition: 'bottom'
- });
+  captionPosition: "bottom",
+});
 
 // console.log(galleryItems);
